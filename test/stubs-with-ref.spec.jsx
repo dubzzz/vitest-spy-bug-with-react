@@ -1,4 +1,4 @@
-import { test, vi } from "vitest";
+import { expect, test, vi } from "vitest";
 import { render } from "@testing-library/react";
 import React from "react";
 import App from "../src/App";
@@ -8,5 +8,6 @@ test("stubs with ref", () => {
   vi.spyOn(MiscMock, "Button").mockImplementation(
     React.forwardRef(() => <div>Stubbed</div>)
   );
-  render(<App />);
+  const { container } = render(<App />);
+  expect(container).toMatchInlineSnapshot();
 });

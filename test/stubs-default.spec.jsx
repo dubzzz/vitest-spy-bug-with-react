@@ -2,20 +2,20 @@ import { expect, test, vi } from "vitest";
 import { render } from "@testing-library/react";
 import React from "react";
 import App from "../src/App";
-import * as MiscMock from "../src/Misc";
+import * as OtherMock from "../src/Other";
 
 test("stubs", () => {
-  vi.spyOn(MiscMock, "Button").mockImplementation(() => <div>Stubbed</div>);
+  vi.spyOn(OtherMock, "default").mockImplementation(() => <div>Stubbed</div>);
   const { container } = render(<App />);
   expect(container).toMatchInlineSnapshot(`
     <div>
       <div>
+        <button>
+          Me!
+        </button>
         <div>
           Stubbed
         </div>
-        <button>
-          Other!
-        </button>
       </div>
     </div>
   `);
