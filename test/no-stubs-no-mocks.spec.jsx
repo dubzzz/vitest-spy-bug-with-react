@@ -14,6 +14,9 @@ test("no stubs no mocks", () => {
         <button>
           Other!
         </button>
+        <button>
+          Bis!
+        </button>
       </div>
     </div>
   `);

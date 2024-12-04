@@ -16,6 +16,9 @@ test("stubs", () => {
         <button>
           Other!
         </button>
+        <button>
+          Bis!
+        </button>
       </div>
     </div>
   `);

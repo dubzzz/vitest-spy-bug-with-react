@@ -5,7 +5,7 @@ import App from "../src/App";
 
 vi.mock("../src/Other", () => ({ default: () => <div>Stubbed</div> }));
 
-test("mocks", () => {
+test("mocks default", () => {
   const { container } = render(<App />);
   expect(container).toMatchInlineSnapshot(`
     <div>
@@ -16,6 +16,9 @@ test("mocks", () => {
         <div>
           Stubbed
         </div>
+        <button>
+          Bis!
+        </button>
       </div>
     </div>
   `);
