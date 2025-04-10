@@ -4,6 +4,8 @@ import React from "react";
 import * as ReactVirtualizedAutoSizerMock from "react-virtualized-auto-sizer";
 import VirtuApp from "provider/App";
 
+vi.mock("react-virtualized-auto-sizer", { spy: true });
+
 test("stubs react-virtualized-auto-sizer", () => {
   spyOnReactVirtualizedAutoSizer();
   const { container } = render(<VirtuApp />);
