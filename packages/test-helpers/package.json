@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "private": true,
+  "name": "test-helpers",
+  "version": "0.0.0",
+  "exports": {
+    "./package.json": "./package.json",
+    "./*": "./lib/*.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "react-virtualized-auto-sizer": "^1.0.25",
+    "vitest": "^3"
+  },
+  "devDependencies": {}
+}

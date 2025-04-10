@@ -9,6 +9,8 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "provider": "file:../provider",
+    "test-helpers": "file:../test-helpers",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@vitest/ui": "*",
