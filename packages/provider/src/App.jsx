@@ -1,14 +1,13 @@
 import React from "react";
-import { Button } from "./Misc";
-import Other from "./Other";
-import OtherBis from "./OtherBis";
+import AutoSizer from "react-virtualized-auto-sizer";
 
 export default function App() {
   return (
-    <div>
-      <Button />
-      <Other />
-      <OtherBis />
-    </div>
+    <AutoSizer>
+      {({ width, height }) => {
+        const style = { height, width };
+        return <div style={style} />;
+      }}
+    </AutoSizer>
   );
 }
