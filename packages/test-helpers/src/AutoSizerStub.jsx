@@ -2,7 +2,7 @@ import { vi } from "vitest";
 import React from "react";
 import * as ReactVirtualizedAutoSizerMock from "react-virtualized-auto-sizer";
 
-//vi.mock("react-virtualized-auto-sizer", { spy: true });
+vi.mock("react-virtualized-auto-sizer", { spy: true });
 
 export function spyOnReactVirtualizedAutoSizer() {
   const height = 500;
