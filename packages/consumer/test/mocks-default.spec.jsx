@@ -1,7 +1,7 @@
 import { expect, test, vi } from "vitest";
 import { render } from "@testing-library/react";
 import React from "react";
-import App from "../src/App";
+import App from "../../provider/src/App";
 
 vi.mock("../src/Other", () => ({ default: () => <div>Stubbed</div> }));
 
