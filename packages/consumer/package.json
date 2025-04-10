@@ -16,7 +16,7 @@
     "react": "^19",
     "react-dom": "^19",
     "react-virtualized-auto-sizer": "^1.0.25",
-    "vite": "^5",
+    "vite": "^6",
     "vitest": "^3"
   }
 }
