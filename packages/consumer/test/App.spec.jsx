@@ -1,9 +1,11 @@
-import { expect, test } from "vitest";
+import { expect, test, vi } from "vitest";
 import { render } from "@testing-library/react";
 import React from "react";
 
 import VirtuApp from "provider/App";
 import { spyOnReactVirtualizedAutoSizer } from "test-helpers/AutoSizerStub";
+
+vi.mock("react-virtualized-auto-sizer", { spy: true });
 
 test("stubs react-virtualized-auto-sizer", () => {
   spyOnReactVirtualizedAutoSizer();
